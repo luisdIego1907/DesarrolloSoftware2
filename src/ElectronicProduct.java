@@ -4,8 +4,8 @@ public class ElectronicProduct extends Product implements Returnable {
 
     }
 
-    public ElectronicProduct(String name , double price){
-        super(name , price);
+    public ElectronicProduct(String name , double price , ProductStatus status){
+        super(name , price , status);
     }
 
     @Override
@@ -16,6 +16,6 @@ public class ElectronicProduct extends Product implements Returnable {
     @Override
     public boolean canBeReturned(int daysSincePurchase) {
      
-        return daysSincePurchase <= 5;
+        return daysSincePurchase <= 15;
     }
 }

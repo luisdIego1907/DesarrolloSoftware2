@@ -2,14 +2,16 @@ abstract class Product {
 
     private String name;
     private double price;
+    private ProductStatus status;
 
     public Product() {
 
     }
 
-    public Product(String name, double price) {
+    public Product(String name, double price , ProductStatus status){
         this.name = name;
         this.price = price;
+        this.status = status;
     }
 
     public void setName(String name) {
@@ -27,6 +29,10 @@ abstract class Product {
     public void setPrice(double price){
         this.price = price;
     }
+
+    public ProductStatus getStatus(){
+        return this.status;
+    }
     @Override
     public String toString(){
 
@@ -38,4 +44,9 @@ abstract class Product {
     }
 
     public abstract double calculateDiscount();
+
+    public boolean isAvailableForSale(){
+
+        return status == ProductStatus.AVAILABLE;
+    }
 }
