@@ -1,4 +1,4 @@
-public class ElectronicProduct extends Product {
+public class ElectronicProduct extends Product implements Returnable {
 
     public ElectronicProduct() {
 
@@ -11,5 +11,11 @@ public class ElectronicProduct extends Product {
     @Override
     public double calculateDiscount(){
         return getPrice() * 0.02;
+    }
+
+    @Override
+    public boolean canBeReturned(int daysSincePurchase) {
+     
+        return daysSincePurchase <= 5;
     }
 }
