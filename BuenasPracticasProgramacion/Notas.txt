@@ -1,0 +1,16 @@
+*************************************************
+07/01
+
+Refactorización: Mejorar la estructua interna del código sin alterar su comportamiento. Su propósito es aumentar la legibilidad, 
+amntenibilidad y calidad ayudando a reducir la deuda técnica y a mantener una base de código limpia y eficiente. 
+Se realiza cuando existen duplicaciones, mal diseño, conocimiento desactualizado o problemas de rendimiento.
+
+Deuda Técnica: costo futuro que se genera cuando se toman decisiones tecnicas rapidas en el desarrollo de software
+para ganar tiempo a corto plazo, sacrificando calidad, mantenibilidad o buenas practicas.
+
+Code Smell:Es una señal o indicadores de codigo de baja calidad: Código que es dificl de mantener, entender o modificar o probar.
+En escencia, es código que no "huele bien" y que probablemente necesita refactorizacion.
+
+Clean Code: Es un estilo de desarrollo de software que prioriza la claridad y la mantenibilidad del codigo. Su importancia no 
+radica unicamente en que el codigo funciones, sino que sea facil de leer, comprender y exlicar.+
+***************************************************
