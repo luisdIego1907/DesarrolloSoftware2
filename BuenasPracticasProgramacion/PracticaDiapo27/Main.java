@@ -1,32 +1,24 @@
 package PracticaDiapo27;
 
-import java.util.Scanner;
+import IOManager.Manager;
 
-import IOManager.*;
 
 public class Main {
 
     public static void main(String args[]) {
 
-        try (
+        RegistroUsuario registroUsuario = new RegistroUsuario();
 
-            Scanner scanner = new Scanner(System.in)
+        RecuperacionCuenta recuperacionCuenta = new RecuperacionCuenta();
 
-        ) {
+        System.out.println("Digite su correo");
 
-            RegistroUsuario registroUsuario = new RegistroUsuario();
-            
-            RecuperacionCuenta recuperacionCuenta = new RecuperacionCuenta();
-            
-            System.out.println("Digite su correo");
-            
-            String correo = Manager.readString();
-            
-            registroUsuario.registro(correo);
-            
-            recuperacionCuenta.recuperacion(correo);
-            
-        }
+        String correo = Manager.readString();
+
+        registroUsuario.registro(correo);
+
+        recuperacionCuenta.recuperacion(correo);
+
     }
 
 }

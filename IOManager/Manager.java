@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Manager {
 
-    private static final Scanner scanner = new Scanner(System.in);
+     private static final Scanner scanner = new Scanner(System.in);
 
     public static void print(Object var) {
 
