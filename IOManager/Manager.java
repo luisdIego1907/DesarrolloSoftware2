@@ -1,15 +1,17 @@
+package IOManager;
+
 import java.util.Scanner;
 
-public class IOManager {
+public class Manager {
 
-    private final Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
-    public static void print(Object var){
+    public static void print(Object var) {
 
         System.out.println(var);
     }
 
-    public String readString(){
+    public static String readString() {
 
         String value = scanner.next();
 
@@ -18,7 +20,7 @@ public class IOManager {
         return value;
     }
 
-    public double readDouble(){
+    public static double readDouble() {
 
         double value = scanner.nextDouble();
 
@@ -27,7 +29,7 @@ public class IOManager {
         return value;
     }
 
-    public int readInt(){
+    public static int readInt() {
 
         int value = scanner.nextInt();
 
@@ -35,5 +37,4 @@ public class IOManager {
 
         return value;
     }
-   
 }

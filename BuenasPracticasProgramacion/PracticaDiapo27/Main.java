@@ -2,6 +2,8 @@ package PracticaDiapo27;
 
 import java.util.Scanner;
 
+import IOManager.*;
+
 public class Main {
 
     public static void main(String args[]) {
@@ -18,11 +20,12 @@ public class Main {
             
             System.out.println("Digite su correo");
             
-            String correo = scanner.next();
+            String correo = Manager.readString();
             
             registroUsuario.registro(correo);
             
             recuperacionCuenta.recuperacion(correo);
+            
         }
     }
 
