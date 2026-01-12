@@ -6,21 +6,24 @@ public class Main {
 
     public static void main(String args[]) {
 
-        Scanner scanner = new Scanner(System.in);
+        try (
 
-        RegistroUsuario registroUsuario = new RegistroUsuario();
+            Scanner scanner = new Scanner(System.in)
 
-        RecuperacionCuenta recuperacionCuenta = new RecuperacionCuenta();
+        ) {
 
-        System.out.println("Digite su correo");
-
-        String correo = scanner.next();
-
-        registroUsuario.registro(correo);
-
-        recuperacionCuenta.recuperacion(correo);
-
-        scanner.close();
+            RegistroUsuario registroUsuario = new RegistroUsuario();
+            
+            RecuperacionCuenta recuperacionCuenta = new RecuperacionCuenta();
+            
+            System.out.println("Digite su correo");
+            
+            String correo = scanner.next();
+            
+            registroUsuario.registro(correo);
+            
+            recuperacionCuenta.recuperacion(correo);
+        }
     }
 
 }

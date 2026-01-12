@@ -1,8 +1,6 @@
-package IOManager;
-
 import java.util.Scanner;
 
-public class Manager {
+public class IOManager {
 
     private final Scanner scanner = new Scanner(System.in);
 
@@ -13,7 +11,11 @@ public class Manager {
 
     public String readString(){
 
-        return scanner.next();
+        String value = scanner.next();
+
+        scanner.nextLine();
+
+        return value;
     }
 
     public double readDouble(){
@@ -34,5 +36,4 @@ public class Manager {
         return value;
     }
    
-    
 }
