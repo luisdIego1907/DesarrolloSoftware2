@@ -14,3 +14,8 @@ En escencia, es código que no "huele bien" y que probablemente necesita refacto
 Clean Code: Es un estilo de desarrollo de software que prioriza la claridad y la mantenibilidad del codigo. Su importancia no 
 radica unicamente en que el codigo funciones, sino que sea facil de leer, comprender y exlicar.+
 ***************************************************
+
+12/01
+ Operador Ternario:
+
+    tipo_resultado nombre_variable = (condicion) ? valor_si_verdadero : valor_si_falso;
