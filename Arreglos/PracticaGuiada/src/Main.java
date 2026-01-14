@@ -36,10 +36,12 @@ public class Main {
          */
 
         Pet sam = new Pet("Sam", "perro");
-        
+        Pet luna = new Pet("Luna" , "perro");
+        Pet theo = new Pet("Theo", "perro");
+
         IOManager.print((person.addPet(sam)) ? "Pet added successfully" : "Failed to add pet");
-        IOManager.print((person.addPet(new Pet("Luna", "perro"))) ? "Pet added successfully" : "Failed to add pet");
-        IOManager.print((person.addPet(new Pet("Theodoro", "perro"))) ? "Pet added successfully" : "Failed to add pet");
+        IOManager.print((person.addPet(luna)) ? "Pet added successfully" : "Failed to add pet");
+        IOManager.print((person.addPet(theo)) ? "Pet added successfully" : "Failed to add pet");
 
         /*
          * Se cae por un null pointer exception.
@@ -49,6 +51,6 @@ public class Main {
             IOManager.print(pet.getName());
         }
 
-        IOManager.print(person.removePet(sam) ? "Se elimino de la lsita" : "No se pudo eliminar");
+        IOManager.print(person.removePet(sam) ? "Pet remove successfully" : "Failed to remove pet");
     }
 }

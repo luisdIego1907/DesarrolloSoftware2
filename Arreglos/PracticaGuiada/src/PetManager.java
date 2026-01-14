@@ -4,9 +4,7 @@ public class PetManager {
     private Pet[] pets;
 
     public PetManager(int numPets) {
-        this.petCounter = numPets;
         pets = new Pet[numPets];
-
     }
 
     public boolean addPet(Pet pet) {
