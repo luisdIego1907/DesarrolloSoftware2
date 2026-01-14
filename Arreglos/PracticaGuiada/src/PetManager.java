@@ -82,7 +82,7 @@ public class PetManager {
 
         for (int i = 0; i < petCounter; i++) {
 
-            if (this.pets[i] == null) {
+            if (this.pets[i] == null && i == index) {
 
                 return true;
             }
