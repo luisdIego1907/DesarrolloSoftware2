@@ -64,6 +64,10 @@ public class Main {
 
         IOManager.print( (person.getPets().length == 0) ? "No pets found" : petsName(person) );
 
+        IOManager.print( (person.updatePet(sam, 1) ? "Se agrego " : "No se agrego") );
+
+        IOManager.print(" Comprobar que se agrego bien \n" + petsName(person));
+
     }
     static String petsName(Person person){
 
