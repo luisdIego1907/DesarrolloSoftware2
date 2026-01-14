@@ -1,0 +1,1 @@
+En el algoritmo burbuja, en el segudno for, se resta por que el último número ya encontró su posición definitiva. 

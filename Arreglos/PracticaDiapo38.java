@@ -28,10 +28,44 @@ public class PracticaDiapo38 {
 
         IOManager.Manager.print("Arreglo del reves: " + reves(numeros));
 
-        */
+        
 
         IOManager.Manager.print("Numero de veces que aparece el numero: " +cuantavasVecesEsta(numeros, 100));
 
+        */
+
+        IOManager.Manager.print(imprimirArreglo(combinacion(numeros)));
+    }
+
+    static int[] combinacion(int[] arreglo){
+
+        int[] num = {1,2,3,4,5,6,7,8,9,10 , 11 , 12};
+
+        int[] combi = new int[12];
+
+        for(int i = 0 ; i < combi.length; i++){
+
+            if( i % 2 == 0){
+
+                combi[i] = arreglo[i];
+
+            }else{
+
+                combi[i] = num[i];
+            }
+        }
+
+        return combi;
+    }
+    static int[] inversion(int[] arreglo){
+
+        int temp = arreglo[0];
+
+        arreglo[0] = arreglo[arreglo.length];
+
+        arreglo[arreglo.length] = temp;
+
+        return arreglo;
     }
 
     static int cuantavasVecesEsta(int[] arreglo , int num){
@@ -196,4 +230,13 @@ public class PracticaDiapo38 {
 
         return cuadrado;
     }
+
+  
+
+   
 }
+
+    class Person{
+
+    }
+   
