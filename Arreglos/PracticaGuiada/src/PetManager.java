@@ -5,6 +5,7 @@ public class PetManager {
 
     public PetManager(int numPets) {
         this.petCounter = numPets;
+        pets = new Pet[numPets];
 
     }
 
@@ -23,5 +24,9 @@ public class PetManager {
         }
 
         return false;
+    }
+
+    public Pet[] getPets(){
+        return this.pets;
     }
 }

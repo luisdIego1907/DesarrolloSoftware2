@@ -9,7 +9,7 @@ public class Person {
 
     }
 */
-    public Person(String name , int age , int numberOfPets , PetManager petManager){
+    public Person(String name , int age  , PetManager petManager){
         this.name = name;
         this.age = age;
         this.petManager = petManager;
@@ -33,4 +33,7 @@ public class Person {
         return petManager.addPet(pet);
     }
 
+    public PetManager getPetManager(){
+        return this.petManager;
+    }
 }
