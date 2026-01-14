@@ -36,7 +36,7 @@ public class Main {
          */
 
         Pet sam = new Pet("Sam", "perro");
-        Pet luna = new Pet("Luna" , "perro");
+        Pet luna = new Pet("Luna", "perro");
         Pet theo = new Pet("Theo", "perro");
 
         IOManager.print((person.addPet(sam)) ? "Pet added successfully" : "Failed to add pet");
@@ -45,12 +45,34 @@ public class Main {
 
         /*
          * Se cae por un null pointer exception.
-            Por que solo se tenía agregado una pet
+         * Por que solo se tenía agregado una pet
          */
         for (Pet pet : person.getPetManager().getPets()) {
             IOManager.print(pet.getName());
         }
 
         IOManager.print(person.removePet(sam) ? "Pet remove successfully" : "Failed to remove pet");
+
+        /* 
+        if(person.getPets().length == 0){
+            IOManager.print("No pets found");
+        }else{
+            for(Pet pet : person.getPets()){
+                IOManager.print(pet.getName());
+            }
+        }*/
+
+        IOManager.print( (person.getPets().length == 0) ? "No pets found" : petsName(person) );
+
+    }
+    static String petsName(Person person){
+
+        String names = "";
+
+        for(Pet pet : person.getPets()){
+            names+= pet.getName() + "\n";
+        }
+
+        return names;
     }
 }
