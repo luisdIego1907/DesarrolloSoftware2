@@ -41,4 +41,9 @@ public class Person {
     public PetManager getPetManager(){
         return this.petManager;
     }
+
+    public Pet[] getPets(){
+
+        return this.petManager.getPets();
+    }
 }
