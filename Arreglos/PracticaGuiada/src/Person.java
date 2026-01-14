@@ -33,6 +33,11 @@ public class Person {
         return petManager.addPet(pet);
     }
 
+    public boolean removePet(Pet pet){
+
+        return petManager.removePet(pet);
+    }
+
     public PetManager getPetManager(){
         return this.petManager;
     }
