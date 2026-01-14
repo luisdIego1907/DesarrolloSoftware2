@@ -35,7 +35,9 @@ public class Main {
          * }
          */
 
-        IOManager.print((person.addPet(new Pet("Sam", "perro"))) ? "Pet added successfully" : "Failed to add pet");
+        Pet sam = new Pet("Sam", "perro");
+        
+        IOManager.print((person.addPet(sam)) ? "Pet added successfully" : "Failed to add pet");
         IOManager.print((person.addPet(new Pet("Luna", "perro"))) ? "Pet added successfully" : "Failed to add pet");
         IOManager.print((person.addPet(new Pet("Theodoro", "perro"))) ? "Pet added successfully" : "Failed to add pet");
 
@@ -46,5 +48,7 @@ public class Main {
         for (Pet pet : person.getPetManager().getPets()) {
             IOManager.print(pet.getName());
         }
+
+        IOManager.print(person.removePet(sam) ? "Se elimino de la lsita" : "No se pudo eliminar");
     }
 }
