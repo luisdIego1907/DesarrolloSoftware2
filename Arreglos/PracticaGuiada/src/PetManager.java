@@ -50,6 +50,13 @@ public class PetManager {
     }
 
     public Pet[] getPets(){
-        return this.pets;
+        
+        Pet[] pets = new Pet[this.petCounter];
+
+        for(int i = 0; i < this.petCounter; i++){
+            pets[i] = this.pets[i];
+        }
+
+        return pets;
     }
 }
