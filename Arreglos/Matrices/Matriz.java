@@ -28,32 +28,33 @@ public class Matriz {
         // Manager.print(repetetiveRow(repetitiveMatrix, 2) ? "Los valores son iguales"
         // : "Los valores son distintos");
 
-        //int[][] frame = new int[8][6];
+        // int[][] frame = new int[8][6];
 
-       // printMatrix(buildFrame(frame));
+        // printMatrix(buildFrame(frame));
 
-       //printMatrix(identity()); // matriz identidad
+        // printMatrix(identity()); // matriz identidad
 
-      // Manager.print(positions(assignRandomValues(), 7));
+        // Manager.print(positions(assignRandomValues(), 7));
 
-      int[][] randomMatrix = assignRandomValues();
+        int[][] randomMatrix = assignRandomValues();
 
-      printMatrix(randomMatrix);
+        printMatrix(randomMatrix);
 
-      //Manager.print("Numero mayor: " + highestValue(randomMatrix));
+        // Manager.print("Numero mayor: " + highestValue(randomMatrix));
 
         Manager.print(additionCorners(randomMatrix));
     }
 
-    public static int additionCorners(int[][] matrix){
+    public static int additionCorners(int[][] matrix) {
 
         int total = 0;
 
-        for(int i = 0 ; i < matrix.length; i++){
+        for (int i = 0; i < matrix.length; i++) {
 
-            for(int j = 0 ; j < matrix[i].length; j++){
+            for (int j = 0; j < matrix[i].length; j++) {
 
-                if( (i == 0 && j == 0) || (i == matrix.length - 1 && j == matrix[i].length - 1) || (i == matrix.length - 1 && j == 0) || (i == 0 && j == matrix[i].length - 1)){
+                if ((i == 0 && j == 0) || (i == matrix.length - 1 && j == matrix[i].length - 1)
+                        || (i == matrix.length - 1 && j == 0) || (i == 0 && j == matrix[i].length - 1)) {
 
                     total += matrix[i][j];
                 }
@@ -62,32 +63,35 @@ public class Matriz {
 
         return total;
     }
-    public static int highestValue(int[][] matrix){
 
-        int highestValue =  Integer.MIN_VALUE;
+    public static int highestValue(int[][] matrix) {
 
-        for(int i = 0 ; i < matrix.length ; i++){
+        int highestValue = Integer.MIN_VALUE;
 
-            for(int j = 0 ; j < matrix[i].length ; j++){
+        for (int i = 0; i < matrix.length; i++) {
 
-                if( matrix[i][j] > highestValue) highestValue = matrix[i][j];
+            for (int j = 0; j < matrix[i].length; j++) {
+
+                if (matrix[i][j] > highestValue)
+                    highestValue = matrix[i][j];
             }
         }
 
         return highestValue;
 
     }
-    public static String positions(int[][] matrix , int number){
+
+    public static String positions(int[][] matrix, int number) {
 
         String positions = "Posicion en donde se repite el numero: " + number + "\n";
-        
-        for(int i = 0 ; i < matrix.length ; i++){
 
-            for(int j = 0 ; j < matrix[i].length ; j++){
+        for (int i = 0; i < matrix.length; i++) {
 
-                if( matrix[i][j] == number){
+            for (int j = 0; j < matrix[i].length; j++) {
 
-                    positions+= "Fila: " + i + " Columna: " + j + "\n";
+                if (matrix[i][j] == number) {
+
+                    positions += "Fila: " + i + " Columna: " + j + "\n";
                 }
             }
         }
@@ -95,15 +99,15 @@ public class Matriz {
         return positions;
     }
 
-    public static int[][]  assignRandomValues(){
+    public static int[][] assignRandomValues() {
 
         int[][] matrix = new int[10][10];
 
         SecureRandom random = new SecureRandom();
 
-        for(int i = 0; i < matrix.length; i++){
+        for (int i = 0; i < matrix.length; i++) {
 
-            for(int j = 0 ; j< matrix[i].length; j++){
+            for (int j = 0; j < matrix[i].length; j++) {
 
                 matrix[i][j] = random.nextInt(10);
             }
@@ -112,18 +116,18 @@ public class Matriz {
         return matrix;
     }
 
-    public static int[][] identity(){
+    public static int[][] identity() {
 
         int[][] matrix = new int[7][7];
 
-        for(int i = 0 ; i < matrix.length ; i++){
+        for (int i = 0; i < matrix.length; i++) {
 
-            for(int j = 0 ; j < matrix[i].length; j++){
+            for (int j = 0; j < matrix[i].length; j++) {
 
-                if(i == j){
+                if (i == j) {
 
                     matrix[i][j] = 1;
-                }else{
+                } else {
                     matrix[i][j] = 0;
                 }
             }
