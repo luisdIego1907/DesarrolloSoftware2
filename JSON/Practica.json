@@ -1,0 +1,30 @@
+{
+    "firstName" : "Luis",
+    "lastName" : "Quesada",
+    "isAlive" : false,
+    "age" : 20,
+    "addres" : 
+        {
+        "streetAddres" : "Blablhable",
+        "city" : "Grecia",
+        "state" : "Alajuela",
+        "postalCode" : "20301"    
+        },
+
+    "phoneNumber": [
+
+       {
+        "type" : "iphone",
+        "number" : "67788"
+        },
+        {
+        "type" : "chawei",
+        "number" : "34567"
+        } 
+    ],
+    "children": [
+        "AAAAAAA" , "eeeeeeeee"
+    ],
+    "spouse" : null
+
+}
