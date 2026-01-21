@@ -5,6 +5,7 @@ public class Person {
     private String name;
     private int age;
     private boolean isStudent;
+    private int id;
 
     public Person(){
 
@@ -36,6 +37,9 @@ public class Person {
         this.isStudent = isStudent;
     }
 
+    public int getId(){
+        return id;
+    }
     @Override
     public String toString(){
 
