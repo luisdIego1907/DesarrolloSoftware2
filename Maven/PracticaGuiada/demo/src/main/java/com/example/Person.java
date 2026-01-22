@@ -11,10 +11,11 @@ public class Person {
 
     }
 
-    public Person(String name , int age , boolean isStudent){
+    public Person(String name , int age , boolean isStudent , int id){
         this.name = name;
         this.age = age;
         this.isStudent = isStudent;
+        this.id = id;
     }
 
     public String getName(){
@@ -40,9 +41,14 @@ public class Person {
     public int getId(){
         return id;
     }
+
+    public void setId(int id){
+        this.id = id;
+    }
+    
     @Override
     public String toString(){
 
-        return " Name: " + name + " Edad: " + age + " isStudent: " + isStudent;
+        return " Name: " + name + " Edad: " + age + " isStudent: " + isStudent + " Id: " + id;
     }
 }

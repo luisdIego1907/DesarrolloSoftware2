@@ -15,7 +15,7 @@ public class Main {
 
         Gson gson = new Gson();
 
-        Person person = new Person("Luis", 20, true);
+        Person person = new Person("Luis", 20, true , 07);
 
         /*
          * String json = gson.toJson(person);
