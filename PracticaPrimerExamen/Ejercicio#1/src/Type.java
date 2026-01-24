@@ -1,0 +1,3 @@
+public enum Type {
+    HEADPHONE, KEYBOARD, MOUSE, MOUSEPAD, SPEAKER, MONITOR
+}
