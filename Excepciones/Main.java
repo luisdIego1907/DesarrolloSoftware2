@@ -37,7 +37,13 @@ public class Main {
 
         UserService user = new UserService();
 
-        user.registerUser(25);
+       // user.registerUser(25);
+
+        try{
+             user.registerUser(2);
+        }catch(InvalidAgeException e){
+            System.out.println(e);
+        }
 
        
     }
