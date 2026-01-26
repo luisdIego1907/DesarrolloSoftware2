@@ -74,7 +74,15 @@ public class PeopleManager {
     }
 
     public boolean update(Person updatedPerson) {
+        /*
+            Falto validar si la persona es null
+         */
 
+        if(updatedPerson == null){
+
+            return false;
+        }
+        
         List<Person> people = readFile();
 
         for (int i = 0; i < people.size(); i++) {
