@@ -1,0 +1,20 @@
+Error: al acabarse la memoria, es algo que no se puede arreglar u optimizar. Y el encargado es JVM.
+
+Al contrario, exception sí se puede corregir.
+
+
+Las checked son las que obligan tener un try catch o thorws.
+
+Las unchecked no obliga a tener try catch.
+
+El throw funciona como un return. Si tenemos dos seguidos, nunca se llegara con el otro
+
+throw lanza la excepction y el throws cuales son las que se van a lanzar.
+
+El try necesita un catch. Pero tambien puede ser un finally. 
+
+Puede tener más de un catch.
+
+El finally siempre se ejecuta.  
+
+Cuando hay multiples catch, el orden de los bloques si importa. Los más específicos deben ir antes que los más generales. 
