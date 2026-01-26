@@ -1,18 +1,19 @@
 
 import java.util.Scanner;
-
-public class Main {
+public class Primero {
     
     public static void main(String[] args) {
         
+        System.out.println("Me cago en visual studio");
+
         int[] array = new int[10];
 
         Scanner scanner = new Scanner(System.in);
 
-        getValues(array, scanner);
+        printValues(getValues(array, scanner));
     }
 
-    public static void getValues(int[] array , Scanner scanner){
+    public static int[] getValues(int[] array , Scanner scanner){
 
         int value = 0 ;
 
@@ -23,7 +24,16 @@ public class Main {
             value = scanner.nextInt();
 
             array[i] = value;
+
+            scanner.nextLine();
         }
+
+        return array;
+    }
+
+    public static void printValues(int[] array){
+
+        System.out.println("El valor del arreglo son:\n");
 
         java.util.Arrays.stream(array).forEach(System.out :: println);
     }

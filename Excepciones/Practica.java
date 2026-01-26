@@ -2,8 +2,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.text.NumberFormat;
 
-
-public class Main {
+public class Practica {
 
     public static void main(String[] args) {
         
