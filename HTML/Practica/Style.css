@@ -1,0 +1,45 @@
+.red{
+
+    color: red;
+}
+
+.blue{
+
+    color: blue;
+}
+
+.orange{
+
+    color: orange;
+}
+.green{
+    color: green;
+}
+
+.yellow{
+    color: yellow;
+}
+img{
+    width: 200px;
+    height: 200px;
+    border: solid;
+    border-width: 0.5cap;
+    border-style: double;
+}
+
+*{
+    text-align: center;
+}
+.inline{
+    display: inline;
+
+}
+
+.desaparecer{
+    display: none;
+}
+
+.flex{
+
+    display: flex;
+}
