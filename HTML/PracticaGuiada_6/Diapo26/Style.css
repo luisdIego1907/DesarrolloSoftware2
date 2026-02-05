@@ -1,0 +1,12 @@
+a{
+    text-transform: uppercase;
+    font-size: large;
+}
+
+footer a{
+    text-transform: uppercase;
+}
+
+a.test{
+    text-transform: lowercase;
+}
