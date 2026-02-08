@@ -1,0 +1,15 @@
+{
+    "name" : "Mate Discreta"
+    ,"profesor" : "Carlos"
+    , "students" : 
+    [
+        {
+            "name" : "Luis"
+            ,"email" : "algo"
+        },
+        {
+            "name" : "Juan"
+            ,"email" : "algoparte2"
+        }
+    ]
+}

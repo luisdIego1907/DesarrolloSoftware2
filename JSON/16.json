@@ -1,0 +1,12 @@
+[
+    "movie" : 
+    {
+        "id" : "123",
+        "name" : "star wars",
+        "genres" : 
+        [
+            "Action" , "Sci-Fi"
+        ]
+        "calification" : 10
+    }
+]

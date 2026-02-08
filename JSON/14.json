@@ -1,0 +1,15 @@
+{
+    "userName" : "xxlu15",
+    "followers" : 150 ,
+    "posts" : 
+    [
+        {
+            "id" : "123",
+            "content" : "image"
+        },
+        {
+            "id" : "456",
+            "content" : "image"
+        }
+    ]
+}

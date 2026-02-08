@@ -1,0 +1,14 @@
+{
+    "name" : "EMPRESAX",
+    "employees" :
+    [
+        {
+            "salary" : 100.50,
+            "jobPosition" : "nose"
+        },
+        {
+            "salary" : 200.57,
+            "jobPosition" : "algo"
+        }
+    ]
+}
