@@ -6,6 +6,7 @@ import { Header } from './shared/Header'
 import { Footer } from './shared/Footer'
 import { NotFound } from './shared/NotFound'
 import Movies from './features/movies/Movies'
+import MovieDetails from './features/movies/MovieDetails'
 
 function App() {
 
@@ -21,8 +22,10 @@ function App() {
         <Route path="/" element={<Home />} />
 
         <Route path="/home" element={<Home />} />
-        
+
         <Route path="/movies" element={<Movies />} />
+        
+        <Route path="/movies/:id" element={<MovieDetails />} />
 
         <Route path="*" element={<NotFound />} />
       </Routes>
