@@ -2,27 +2,19 @@ import type { Movie } from "../../models/movie.model";
 import MovieCard from "./MovieCard";
 
 
-export default function MovieList() {
+export default function MovieList({movies} : {movies: Movie[]}){
 
-    const movies: Movie[] = [
-
-        {
-            id: "thebatman",
-            title: "The Batman",
-            description: "Parte 1"
-        },
-        {
-            id: "thedarkknight",
-            title: "The Dark Knight",
-            description: "Parte 2"
-        }
-    ];
     return (
+        <section>
 
-        <div className="flex flex-col gap-4">
-            {movies.map(movie => (
-                <MovieCard key={movie.id} {...movie} />
-            ))}
-        </div>
-    );
+            <div>
+
+               {movies.map((m)=>(
+
+                <MovieCard key={m.id} movie={m} />
+
+               ))}
+            </div>
+        </section>
+    )
 }

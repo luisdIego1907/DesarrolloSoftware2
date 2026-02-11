@@ -1,6 +1,6 @@
 import type {Movie} from "../models/movie.model";
 
-const MOVIES_URL = "../../Data/movies.json";
+const MOVIES_URL = "../../data/movies.json";
 
 export async function getMovies() : Promise<Movie[]>{
 
@@ -18,3 +18,14 @@ export async function getMovies() : Promise<Movie[]>{
 
     return data as Movie[];
 }
+
+export async function getMovieById(id : string) : Promise<Movie |null>{
+
+    const movies = await getMovies();
+
+    const found = movies.find((m) => String(m.id) == String(id));
+
+    return found ?? null;
+}
+
+   
