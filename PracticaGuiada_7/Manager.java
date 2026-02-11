@@ -4,38 +4,37 @@ public class Manager {
 
     private ArrayList<Mascota> pets;
 
-    public Manager(){
+    public Manager() {
         pets = new ArrayList<>();
     }
 
-    public boolean addPet(Mascota pet){
-        
+    public boolean addPet(Mascota pet) {
+
         return this.pets.add(pet);
     }
 
-    public boolean removePet(Mascota petRemove){
+    public boolean removePet(Mascota petRemove) {
 
         return this.pets.remove(petRemove);
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
 
         return this.pets.isEmpty();
     }
 
-    public ArrayList<Mascota> getPets(){
-        
+    public ArrayList<Mascota> getPets() {
+
         return this.pets;
     }
 
-    public boolean update(Mascota petNueva , Mascota petVieja){
+    public boolean update(Mascota petNueva, Mascota petVieja) {
 
-        for(Mascota m : pets){
+        for (int i = 0; i < pets.size(); i++) {
 
-            if(petVieja.getName() == m.getName()){
+            if (pets.get(i).getName().equals(petVieja.getName())) {
 
-                petVieja = petNueva;
-
+                pets.set(i, petNueva);
                 return true;
             }
         }
