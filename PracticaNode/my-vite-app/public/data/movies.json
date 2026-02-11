@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "title": "Inception",
+    "description": "Un ladrón especializado en infiltrarse en los sueños recibe la tarea de implantar una idea en la mente de un empresario."
+  },
+  {
+    "id": "2",
+    "title": "The Dark Knight",
+    "description": "Batman enfrenta al Joker, un criminal caótico que busca sembrar el miedo y el desorden en Gotham."
+  },
+  {
+    "id": "3",
+    "title": "Interstellar",
+    "description": "Un grupo de astronautas viaja a través de un agujero de gusano en busca de un nuevo hogar para la humanidad."
+  },
+  {
+    "id": "4",
+    "title": "Titanic",
+    "description": "Una historia de amor entre dos jóvenes de diferentes clases sociales a bordo del famoso transatlántico."
+  },
+  {
+    "id": "5",
+    "title": "The Matrix",
+    "description": "Un programador descubre que la realidad que conoce es una simulación creada por máquinas."
+  },
+  {
+    "id": "6",
+    "title": "Gladiator",
+    "description": "Un general romano traicionado busca venganza mientras lucha como gladiador en el Coliseo."
+  },
+  {
+    "id": "7",
+    "title": "Avatar",
+    "description": "Un exmarine se une a una misión en el planeta Pandora y termina involucrándose con la cultura Na'vi."
+  },
+  {
+    "id": "8",
+    "title": "The Shawshank Redemption",
+    "description": "Un hombre condenado injustamente encuentra esperanza y amistad dentro de una prisión."
+  },
+  {
+    "id": "9",
+    "title": "Forrest Gump",
+    "description": "La vida de un hombre con un corazón puro que presencia y participa en momentos clave de la historia estadounidense."
+  },
+  {
+    "id": "10",
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "description": "Un joven hobbit inicia un viaje para destruir un poderoso anillo que amenaza la Tierra Media."
+  }
+]

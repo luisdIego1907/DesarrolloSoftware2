@@ -1,6 +1,7 @@
 import type { Movie } from "../../models/movie.model";
 import MovieCard from "./MovieCard";
 
+
 export default function MovieList() {
 
     const movies: Movie[] = [
